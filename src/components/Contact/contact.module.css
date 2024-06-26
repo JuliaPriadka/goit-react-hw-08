@@ -1,0 +1,22 @@
+.contactWrapper {
+  width: 300px;
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.deleteBtn {
+  height: 25px;
+  width: 70px;
+}
