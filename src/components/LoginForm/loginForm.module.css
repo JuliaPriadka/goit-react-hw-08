@@ -6,6 +6,7 @@
   border: 1px solid rgb(154 6 131);
   border-radius: 5px;
   padding: 10px;
+  box-shadow: 10px 9px 5px rgb(192 78 175);
 }
 
 .loginFormLabel {
@@ -39,4 +40,8 @@
 
 .loginFormBtn:hover {
   background-color: rgb(243 9 208);
+}
+
+.errorMsg {
+  color: red;
 }
