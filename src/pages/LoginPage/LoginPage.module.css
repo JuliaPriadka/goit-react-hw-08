@@ -1,0 +1,28 @@
+.loginPage {
+  display: flex;
+  margin-top: 60px;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginPageText {
+  display: flex;
+  gap: 4px;
+}
+
+.loginPageElem {
+  font-weight: 800;
+  color: rgb(154 6 131);
+}
+
+.loginPageLink {
+  font-weight: 800;
+  color: #ffc107;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.loginPageLink:hover {
+  color: rgb(243 9 208);
+}

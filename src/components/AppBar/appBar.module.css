@@ -1,0 +1,9 @@
+.appBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  box-shadow: 10px 9px 5px rgb(192 78 175);
+  border: 1px solid #dbd1db;
+  border-radius: 5px;
+  background-color: rgb(154 6 131);
+}

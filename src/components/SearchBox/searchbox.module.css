@@ -9,10 +9,15 @@
   width: 400px;
   padding: 10px;
   outline: none;
-  border: 1px solid black;
+  border: 1px solid rgb(154 6 131);
   border-radius: 5px;
 }
 
 .searchbox:focus {
-  border-color: blue;
+  border-color: #ffc107;
+}
+
+.searchboxLabel {
+  color: #ffc107;
+  font-weight: 600px;
 }
