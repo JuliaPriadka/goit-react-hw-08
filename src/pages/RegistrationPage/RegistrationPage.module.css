@@ -26,3 +26,7 @@
 .registrationPageLink:hover {
   color: rgb(243 9 208);
 }
+
+.error {
+  color: red;
+}

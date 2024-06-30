@@ -7,6 +7,7 @@ import { selectError, selectLoading } from '../../redux/contacts/selectors';
 import { useEffect } from 'react';
 import { fetchContacts } from '../../redux/contacts/operations';
 import css from './ContactsPage.module.css';
+import { Toaster } from 'react-hot-toast';
 
 export default function ContactsPage() {
   const loading = useSelector(selectLoading);
@@ -22,6 +23,7 @@ export default function ContactsPage() {
     <div>
       <h1 className={css.phonebookTitle}>Phonebook</h1>
       <ContactForm />
+      <Toaster />
       <SearchBox />
       {loading && (
         <Circles

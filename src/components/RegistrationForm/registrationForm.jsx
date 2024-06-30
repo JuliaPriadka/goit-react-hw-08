@@ -7,7 +7,7 @@ import { register } from '../../redux/auth/operations';
 const SignupSchema = Yup.object().shape({
   name: Yup.string().min(2, 'Too Short!').required('Please, enter your name'),
   email: Yup.string()
-    .email('Invalid email')
+    .matches(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, 'Invalid email')
     .required('Please, enter your email'),
   password: Yup.string()
     .min(4, 'Too Short!')

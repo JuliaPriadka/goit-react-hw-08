@@ -3,6 +3,7 @@ import css from '../ContactForm/contactForm.module.css';
 import * as Yup from 'yup';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations';
+import toast from 'react-hot-toast';
 
 const phoneRegExp = /[\d\s-]{6,10}$/;
 
@@ -26,7 +27,18 @@ export default function ContactForm() {
         number: '',
       }}
       onSubmit={(values, actions) => {
-        dispatch(addContact(values));
+        dispatch(addContact(values))
+          .unwrap()
+          .then(() => {
+            toast.success('Contact added!', {
+              style: {
+                color: 'rgb(154 6 131)',
+              },
+            });
+          })
+          .catch(() => {
+            toast.error('Error! Please try again');
+          });
         actions.resetForm();
       }}
       validationSchema={FormValidationSchema}>
