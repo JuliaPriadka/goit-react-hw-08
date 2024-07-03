@@ -8,6 +8,7 @@ import { Circles } from 'react-loader-spinner';
 export default function RegistrationPage() {
   const loading = useSelector(selectAuthLoading);
   const isError = useSelector(selectIsError);
+  console.log(isError);
   return (
     <div className={css.registrationPage}>
       <div className={css.registrationPageText}>
